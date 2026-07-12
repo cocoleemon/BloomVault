@@ -6,7 +6,6 @@
 
 *A research-first beauty companion for discovering, organizing, and understanding beauty products.*
 
-🚧 **Status:** Product Planning (Phase 1)
 
 </div>
 
