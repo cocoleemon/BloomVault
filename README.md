@@ -69,13 +69,6 @@ Current documentation includes:
 - User Personas
 - Product Roadmap
 
----
-
-## Current Phase
-
-**Phase 1 – Product Foundation**
-
-The current focus is defining the product vision, user experience, feature planning, and technical architecture before development begins.
 
 ---
 
