@@ -1,4 +1,4 @@
-```markdown
+
 <div align="center">
 
 # 🌸 BloomVault
@@ -309,5 +309,4 @@ This project exists to make beauty research feel as enjoyable as beauty itself.
 Made with ❤️ by **Coleen Ligasan**
 
 </div>
-```
 
