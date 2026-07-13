@@ -4,7 +4,7 @@
 **Volume:** III — Product Specifications
 **File:** 08-wishlist.md
 **Status:** Draft
-**Version:** 0.1.0
+**Version:** 0.2.0
 **Last Updated:** July 13, 2026
 **Owner:** Coleen Ligasan
 
@@ -15,6 +15,8 @@
 The Wishlist allows users to keep track of products they hope to purchase in the future.
 
 Unlike the Library, which serves as a personal beauty knowledge library, the Wishlist represents purchase intent. It helps users organize products they are considering while continuing to research and compare them before making a decision.
+
+Every Wishlist item may also include an optional **Purchase Intent**, allowing users to remember *why* they saved a product in the first place.
 
 The Wishlist should feel intentional rather than transactional, supporting thoughtful purchasing habits instead of impulse buying.
 
@@ -28,7 +30,8 @@ The Wishlist should help users:
 
 * Keep track of products they want to buy.
 * Separate purchase intent from general research.
-* Revisit products before purchasing.
+* Continue researching before purchasing.
+* Capture the reason behind each future purchase.
 * Make thoughtful buying decisions.
 
 ---
@@ -40,8 +43,9 @@ Users often discover products they want to buy in the future but have no organiz
 As a result, they may:
 
 * Forget products they were interested in.
+* Lose track of why they wanted a product.
 * Repurchase products impulsively.
-* Lose track of products while waiting for sales.
+* Forget to wait for sales or restocks.
 * Struggle to prioritize future purchases.
 
 The Wishlist provides a structured way to manage future purchases while keeping products connected to the user's Beauty Library.
@@ -54,6 +58,7 @@ The Wishlist should:
 
 * Support intentional purchasing.
 * Reduce forgotten products.
+* Preserve the user's purchase intentions.
 * Encourage continued research before buying.
 * Integrate naturally with the Library.
 
@@ -87,18 +92,27 @@ Wishlist items should always feel like part of a larger beauty journey.
 
 ---
 
+### Remember My Intention
+
+**As a user, I want to record why I'm waiting to purchase a product so I can remember my reasoning when I revisit it later.**
+
+---
+
 # Functional Requirements
 
 The Wishlist shall allow users to:
 
 * Add products to the Wishlist.
 * Remove products from the Wishlist.
-* View all wishlisted products.
+* View all Wishlist items.
 * Search within the Wishlist.
 * Sort Wishlist items.
 * Open Product Details from the Wishlist.
+* Assign an optional Purchase Intent.
+* Edit a Purchase Intent.
+* Remove a Purchase Intent.
 
-Wishlisted products should remain part of the user's Library.
+Wishlisted products should always remain part of the user's Library.
 
 ---
 
@@ -108,6 +122,31 @@ Wishlisted products should remain part of the user's Library.
 * Products can exist in both the Library and the Wishlist.
 * Removing a product from the Wishlist does not remove it from the Library.
 * Products may only appear once in the Wishlist.
+* Purchase Intent is optional.
+* Each Wishlist item may have one Purchase Intent.
+* Users may edit or remove the Purchase Intent at any time.
+
+---
+
+# Purchase Intent
+
+Purchase Intent captures the user's reason for saving a product.
+
+This transforms the Wishlist from a simple shopping list into a decision-making tool that supports thoughtful purchasing habits.
+
+Suggested Purchase Intent values include:
+
+* 💸 Waiting for Sale
+* ⏳ Waiting for Payday
+* 🔬 Still Researching
+* 🧴 Finish Current Product
+* 🎁 Gift Idea
+* ✈️ Buy Abroad
+* 🌈 Need Shade Match
+* 📦 Waiting for Restock
+* ✏️ Custom
+
+Future versions may allow users to create fully customizable Purchase Intents.
 
 ---
 
@@ -118,6 +157,10 @@ Library or Product Details
 ↓
 
 Add to Wishlist
+
+↓
+
+(Optional) Select Purchase Intent
 
 ↓
 
@@ -159,10 +202,11 @@ The Wishlist may include:
 * Search bar
 * Sort options
 * Product cards
+* Purchase Intent badge
 * Remove from Wishlist action
 * Empty State
 
-The layout should remain clean and focused.
+The layout should remain clean, organized, and easy to scan.
 
 ---
 
@@ -172,6 +216,7 @@ The Wishlist should:
 
 * Update immediately after adding or removing products.
 * Preserve sorting preferences.
+* Display Purchase Intent badges when available.
 * Allow quick access to Product Details.
 * Make managing future purchases effortless.
 
@@ -207,6 +252,7 @@ Example:
 Examples include:
 
 * Failed Wishlist update.
+* Failed Purchase Intent update.
 * Network interruption.
 * Duplicate additions.
 * Synchronization issues.
@@ -223,6 +269,7 @@ The Wishlist should gracefully support:
 * Offline changes.
 * Deleted products.
 * Duplicate save attempts.
+* Missing Purchase Intent.
 * Slow network conditions.
 
 ---
@@ -248,6 +295,9 @@ Potential analytics events include:
 * Wishlist Opened
 * Wishlist Searched
 * Wishlist Sorted
+* Purchase Intent Selected
+* Purchase Intent Updated
+* Purchase Intent Removed
 
 Analytics should support product improvements while respecting user privacy.
 
@@ -255,9 +305,11 @@ Analytics should support product improvements while respecting user privacy.
 
 # Database Impact
 
-The Wishlist stores user-specific purchase intent and references products already saved in the user's Library.
+The Wishlist stores user-specific purchase intentions while referencing products already saved in the user's Library.
 
-Detailed relationships are defined within the Technical Architecture documentation.
+Each Wishlist item may optionally store a Purchase Intent that captures the user's current buying intention.
+
+Detailed schema definitions are documented within the Technical Architecture volume.
 
 ---
 
@@ -270,6 +322,9 @@ Wishlist requires functionality for:
 * Retrieve Wishlist
 * Search Wishlist
 * Sort Wishlist
+* Assign Purchase Intent
+* Update Purchase Intent
+* Remove Purchase Intent
 
 Implementation details are documented separately.
 
@@ -292,6 +347,8 @@ The Wishlist should:
 * Cache recent updates.
 * Scale alongside growing libraries.
 
+Purchase Intent updates should feel immediate and responsive.
+
 ---
 
 # Acceptance Criteria
@@ -300,6 +357,7 @@ The feature is complete when users can:
 
 * Add products to the Wishlist.
 * Remove products from the Wishlist.
+* Assign, edit, and remove Purchase Intent.
 * Search and sort Wishlist items.
 * Open Product Details from the Wishlist.
 * Maintain Wishlist data across devices.
@@ -310,14 +368,15 @@ The feature is complete when users can:
 
 Potential future improvements include:
 
-* Wishlist priorities.
-* Purchase status tracking.
+* Multiple Purchase Intents.
+* AI-suggested Purchase Intent.
 * Price tracking.
 * Sale notifications.
 * Restock notifications.
 * Purchase reminders.
-* Wishlist reasons (e.g., Waiting for Sale, Still Researching).
 * Budget planning.
+* Custom icons for Purchase Intent.
+* Automatic grouping by Purchase Intent.
 
 ---
 
@@ -327,7 +386,9 @@ The Wishlist represents purchase intention rather than product discovery.
 
 Every wishlisted product should already exist within the user's Beauty Library, reinforcing BloomVault's philosophy that meaningful beauty decisions begin with research.
 
-The Wishlist is designed to support intentional purchasing habits by helping users revisit products, continue learning, and buy with confidence when the time is right.
+Purchase Intent is intentionally lightweight but meaningful. By allowing users to record *why* they are waiting before purchasing, BloomVault supports mindful buying habits and preserves the context behind every Wishlist item.
+
+The Wishlist is designed to encourage thoughtful purchasing—not impulse buying.
 
 ---
 
