@@ -1,258 +1,325 @@
 # 🌸 Information Architecture
 
-> *"A great product helps users know where everything belongs without making them think."*
-
----
-
-# Experience Goal
-
-Create an information structure that feels intuitive, organized, and effortless to navigate.
-
-Users should always know where to find information, where to save discoveries, and where to continue their beauty journey.
-
-The architecture should reinforce BloomVault's identity as a personal beauty library.
+> *"Good architecture helps users find what they need. Great architecture helps users discover what they didn't know they were looking for."*
 
 ---
 
 # Introduction
 
-Information Architecture defines how content, features, and navigation are organized throughout BloomVault.
+BloomVault is designed around a simple principle:
 
-Rather than treating every feature as an independent destination, BloomVault is designed around a single central concept:
+Everything begins with a product.
 
-**The user's personal beauty library.**
+Rather than treating every feature as an isolated destination, BloomVault connects products, ingredients, brands, collections, routines, and personal organization into one seamless experience.
 
-Every saved product, collection, routine, and note contributes to that library.
+Users should never feel lost while exploring.
+
+Every screen should naturally lead to another meaningful destination.
 
 ---
 
-# Information Hierarchy
+# Architecture Principles
+
+The information architecture of BloomVault follows these principles:
+
+- Product-centered navigation
+- Simple and predictable structure
+- Connected experiences
+- Progressive discovery
+- Minimal navigation depth
+- Personal organization first
+
+Every screen should help users continue exploring rather than forcing them to start over.
+
+---
+
+# High-Level Architecture
 
 ```text
-BloomVault
+Authentication
 │
+├── Sign In
+├── Sign Up
+└── Forgot Password
+
+↓
+
+Home
+
 ├── Library
-│   ├── All Products
-│   ├── Collections
-│   ├── Wishlist
-│   ├── Favorites
-│   ├── Routines
-│   ├── Beauty Journal
-│   └── Recently Added
-│
 ├── Discover
-│   ├── Search
-│   ├── Ingredients
-│   ├── Brands
-│   ├── Categories
-│   └── New Discoveries
-│
-├── Compare
-│
-├── Profile
-│   ├── Preferences
-│   ├── Skin Profile
-│   ├── Notifications
-│   ├── Account
-│   └── Settings
+├── Search
+└── Profile
 ```
 
 ---
 
 # Primary Navigation
 
-BloomVault uses four primary destinations.
-
-## 📚 Library
-
-The heart of the app.
-
-This is the user's personal beauty space.
-
-It contains:
-
-* Saved Products
-* Collections
-* Wishlist
-* Favorites
-* Routines
-* Beauty Journal
-* Recently Added
-
-The Library is the default landing page after login.
-
----
-
-## 🔍 Discover
-
-The exploration hub.
-
-Users can:
-
-* Search products
-* Learn about ingredients
-* Explore brands
-* Browse categories
-* Discover new products
-
-Discover exists to inspire curiosity before users save products to their Library.
-
----
-
-## ⚖️ Compare
-
-A dedicated workspace for evaluating products side by side.
-
-Users can compare:
-
-* Ingredients
-* Benefits
-* Skin compatibility
-* Texture
-* Personal notes
-
-Compare supports confident decision-making.
-
----
-
-## 👤 Profile
-
-The user's personal settings and preferences.
-
-Includes:
-
-* Account
-* Skin profile
-* Preferences
-* Notifications
-* App settings
-
-Profile focuses on personalization rather than content discovery.
-
----
-
-# Secondary Navigation
-
-Within each primary destination, users can navigate through contextual sections.
-
-For example:
-
-**Library**
-
-* All Products
-* Collections
-* Wishlist
-* Favorites
-* Routines
-* Beauty Journal
-
-**Discover**
-
-* Search
-* Ingredients
-* Brands
-* Categories
-
-This layered structure keeps the primary navigation clean while providing depth where needed.
-
----
-
-# Content Relationships
-
-Information in BloomVault is interconnected.
-
-For example:
+BloomVault Version 1 contains four primary destinations.
 
 ```text
-Product
-│
-├── Ingredients
-├── Brand
-├── Category
-├── Personal Notes
-├── Collections
-├── Routine
-├── Wishlist
-└── Comparisons
+Home
+
+├── 📚 Library
+├── 🔍 Discover
+├── 🔎 Search
+└── 👤 Profile
 ```
 
-A single product can belong to multiple collections, appear in a routine, and include personal notes without duplication.
-
-This creates a flexible and personalized library.
+These destinations provide access to every core feature within the application.
 
 ---
 
-# Navigation Principles
+# Library
 
-BloomVault's navigation should always be:
+The Library is the user's personal beauty space.
 
-* Predictable
-* Minimal
-* Consistent
-* Easy to learn
+```text
+Library
 
-Users should rarely need more than a few taps to reach their destination.
+├── All Products
+├── Collections
+├── Wishlist
+├── Routines
+└── Product Details
+```
 
----
-
-# Search Strategy
-
-Search is available globally.
-
-Users should be able to search for:
-
-* Products
-* Ingredients
-* Brands
-* Categories
-* Saved products
-* Collections
-
-Search acts as the fastest path to information regardless of where the user is in the app.
+The Library contains only products that belong to the user.
 
 ---
 
-# Information Priorities
+# Discover
 
-BloomVault presents information in order of personal relevance.
+Discover encourages exploration beyond the user's own library.
 
-Priority should always follow this hierarchy:
+```text
+Discover
 
-1. The user's content
-2. Product information
-3. Educational content
-4. Discovery opportunities
+├── Featured Products
+├── Trending Products
+├── New Products
+├── Browse Categories
+└── Product Details
+```
 
-Personal content should never be overshadowed by promotional or trending material.
+Discover introduces users to products they may wish to research.
+
+---
+
+# Search
+
+Search provides direct access to BloomVault's product catalog.
+
+```text
+Search
+
+├── Product Results
+├── Recent Searches
+├── Suggested Searches
+└── Product Details
+```
+
+Search is optimized for quickly finding products rather than browsing.
+
+---
+
+# Product Details
+
+Every product page becomes the central hub of the BloomVault experience.
+
+```text
+Product Details
+
+├── Product Information
+├── Ingredients
+├── Brand
+├── Compare
+├── Collections
+├── Wishlist
+├── Notes
+└── Routines
+```
+
+Almost every feature within BloomVault connects through Product Details.
+
+---
+
+# Ingredient Explorer
+
+Ingredient Explorer is accessed from Product Details.
+
+```text
+Ingredient
+
+├── Description
+├── Benefits
+├── Skin Concerns
+├── Related Ingredients
+├── Products Containing Ingredient
+└── Products in Your Library
+```
+
+Ingredients become another pathway for product discovery and learning.
+
+---
+
+# Brand
+
+Brands provide another way to browse products.
+
+```text
+Brand
+
+├── Product Catalog
+├── Categories
+├── Products in Your Library
+└── Products in Wishlist
+```
+
+Brand pages focus on product exploration rather than company information.
+
+---
+
+# Collections
+
+Collections organize products into meaningful groups.
+
+```text
+Collections
+
+├── Collection List
+├── Collection Details
+├── Add Products
+└── Edit Collection
+```
+
+Collections are completely user-defined.
+
+---
+
+# Wishlist
+
+Wishlist stores products users are interested in purchasing or researching later.
+
+```text
+Wishlist
+
+├── Wishlist Items
+├── Product Details
+└── Move to Collection
+```
+
+Wishlist remains separate from the user's owned products.
+
+---
+
+# Product Comparison
+
+Comparison allows users to evaluate products side by side.
+
+```text
+Comparison
+
+├── Product A
+├── Product B
+├── Ingredients
+├── Benefits
+├── Notes
+└── Differences
+```
+
+Comparison supports informed decision-making before purchase.
+
+---
+
+# Routines
+
+Routines help users organize products into skincare routines.
+
+```text
+Routines
+
+├── Morning
+├── Evening
+├── Custom Routine
+└── Routine Details
+```
+
+BloomVault provides routine planning rather than habit tracking.
+
+---
+
+# Profile
+
+Profile contains user preferences and account settings.
+
+```text
+Profile
+
+├── Personal Information
+├── Preferences
+├── Account Settings
+└── Help
+```
+
+---
+
+# Connected Architecture
+
+BloomVault is designed as a connected knowledge system.
+
+```text
+                📦 Product
+                     │
+      ┌──────────────┼──────────────┐
+      │              │              │
+🌿 Ingredient     🏷️ Brand      ⚖️ Compare
+      │              │              │
+      └──────────────┼──────────────┘
+                     │
+               📚 Library
+                     │
+      ┌──────────────┼──────────────┐
+      │              │              │
+🗂️ Collections   💖 Wishlist   ✨ Routines
+```
+
+This architecture allows users to move naturally between related information without becoming lost.
+
+---
+
+# Navigation Philosophy
+
+BloomVault minimizes unnecessary navigation.
+
+Users should rarely need more than two or three taps to reach related information.
+
+Every Product Details page acts as a gateway to deeper exploration.
 
 ---
 
 # Future Expansion
 
-The architecture is designed to grow without disrupting the core experience.
+The architecture intentionally supports future features such as:
 
-Potential future additions include:
+- AI Beauty Assistant
+- Barcode Scanner
+- Price Tracking
+- Smart Recommendations
+- Product Timeline
 
-* AI Beauty Assistant
-* Barcode Scanner
-* Product Usage Tracking
-* Community Reviews
-* Price Tracking
-* Shared Collections
-
-New features should integrate naturally into the existing structure rather than introducing unnecessary top-level destinations.
+These additions can connect directly to the existing product-centered architecture without requiring major structural changes.
 
 ---
 
-# Closing
+# Information Architecture Summary
 
-BloomVault's information architecture is intentionally centered around one idea:
+BloomVault organizes beauty research around products rather than isolated features.
 
-Everything meaningful belongs in the user's library.
+Products connect users to ingredients, brands, collections, comparisons, routines, and personal knowledge, creating a seamless research experience that grows more valuable over time.
 
-By organizing the product around this principle, users spend less time navigating and more time enjoying their beauty journey.
-
-A clear structure creates a calm experience—and a calm experience encourages curiosity.
+Every screen exists to support curiosity, learning, and organization.
 
 ---
 
