@@ -151,7 +151,6 @@ Collections connect with:
 * Search
 * Compare
 * Wishlist
-* Favorites
 
 Collections are an extension of the user's Beauty Library.
 
