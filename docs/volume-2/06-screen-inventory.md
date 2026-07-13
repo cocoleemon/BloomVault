@@ -1,403 +1,291 @@
 # 🌸 Screen Inventory
 
-> *"Every screen should have a clear purpose. If a screen doesn't serve the user's journey, it doesn't belong."*
-
----
-
-# Experience Goal
-
-Define every screen within BloomVault and its role in the overall experience.
-
-Each screen should have a single, well-defined purpose while contributing to the feeling of a calm, organized, and personal beauty library.
+> *"Every screen should have a clear purpose. If a screen exists without adding meaningful value, it shouldn't exist."*
 
 ---
 
 # Introduction
 
-This document serves as the master inventory of every screen planned for BloomVault.
+The Screen Inventory provides a complete overview of every screen included in BloomVault Version 1.
 
-It provides a high-level overview of the application's structure and acts as a reference for UX design, engineering, and future feature planning.
+Each screen exists to support the application's core philosophy of helping users research, organize, understand, and confidently navigate beauty products.
 
-Each screen listed here should exist because it solves a user need—not simply because it is technically possible to build.
-
----
-
-# App Structure
-
-```text
-BloomVault
-│
-├── Authentication
-├── Library
-├── Discover
-├── Compare
-└── Profile
-```
+Rather than maximizing the number of screens, BloomVault focuses on creating a cohesive and connected experience.
 
 ---
 
 # Authentication
 
-## Welcome
+### Sign In
 
-**Purpose**
+Purpose:
 
-Introduce BloomVault and communicate its value.
-
-**Primary Actions**
-
-* Sign In
-* Create Account
+Allow existing users to securely access their BloomVault account.
 
 ---
 
-## Sign In
+### Sign Up
 
-**Purpose**
+Purpose:
 
-Allow returning users to access their Beauty Library.
-
----
-
-## Create Account
-
-**Purpose**
-
-Register new users.
+Allow new users to create a BloomVault account.
 
 ---
 
-## Onboarding
+### Forgot Password
 
-**Purpose**
+Purpose:
 
-Help new users understand BloomVault and personalize their experience.
-
----
-
-# 📚 Library
-
-The heart of BloomVault.
+Help users recover access to their account.
 
 ---
 
-## Library Home
+# Main Navigation
 
-**Purpose**
+BloomVault Version 1 includes four primary destinations.
 
-The user's personalized dashboard.
-
-Displays recently saved products, collections, routines, and ongoing beauty research.
-
----
-
-## Saved Products
-
-**Purpose**
-
-Display every product saved by the user.
-
-Supports searching, filtering, and sorting.
+| Screen | Purpose |
+|---------|---------|
+| 📚 Library | Personal beauty library and organization |
+| 🔍 Discover | Explore and discover products |
+| 🔎 Search | Search the product catalog |
+| 👤 Me | Account, preferences, and settings |
 
 ---
 
-## Product Details
+# Library
 
-**Purpose**
+### Library Home
 
-Provide complete product information together with the user's personal context.
+Purpose:
 
-Contains:
-
-* Product Overview
-* Ingredients
-* Benefits
-* Notes
-* Collections
-* Compare
-* Save Status
+Display all products saved by the user.
 
 ---
 
-## Collections
+### Collections
 
-**Purpose**
+Purpose:
 
-Display every collection created by the user.
-
----
-
-## Collection Details
-
-**Purpose**
-
-View products belonging to a specific collection.
+Organize products into custom collections.
 
 ---
 
-## Wishlist
+### Collection Details
 
-**Purpose**
+Purpose:
 
-Organize products the user hopes to purchase or continue researching.
-
----
-
-## Favorites
-
-**Purpose**
-
-Quick access to the user's most-loved products.
+View and manage products within a collection.
 
 ---
 
-## Routines
+### Wishlist
 
-**Purpose**
+Purpose:
 
-Manage personalized beauty routines.
-
----
-
-## Routine Details
-
-**Purpose**
-
-View and edit an individual routine.
+View products saved for future consideration.
 
 ---
 
-## Beauty Journal
+### Routines
 
-**Purpose**
+Purpose:
 
-Document personal experiences, observations, and reflections.
-
-*(Future Release)*
+View all skincare routines.
 
 ---
 
-## Recently Added
+### Routine Details
 
-**Purpose**
+Purpose:
 
-Help users quickly return to their latest discoveries.
-
----
-
-# 🔍 Discover
+Create, edit, and manage routines.
 
 ---
 
-## Discover Home
+# Product Experience
 
-**Purpose**
+### Product Details
 
-Encourage exploration through products, brands, ingredients, and categories.
+Purpose:
 
----
+Serve as the central hub for researching a product.
 
-## Search
+Users can:
 
-**Purpose**
-
-Find products quickly.
-
-Supports global search across the entire application.
-
----
-
-## Search Results
-
-**Purpose**
-
-Display relevant search results with filtering and sorting options.
+- View product information
+- Explore ingredients
+- Browse the brand
+- Compare products
+- Add to collections
+- Add to Wishlist
+- Add to routines
+- Write personal notes
 
 ---
 
-## Ingredient Explorer
+### Product Comparison
 
-**Purpose**
+Purpose:
 
-Teach users about cosmetic ingredients.
-
----
-
-## Ingredient Details
-
-**Purpose**
-
-Provide detailed educational information about a specific ingredient.
+Compare products side by side before making a decision.
 
 ---
 
-## Brand Directory
+### Ingredient Explorer
 
-**Purpose**
+Purpose:
 
-Browse beauty brands.
-
----
-
-## Brand Details
-
-**Purpose**
-
-Display brand information together with available products.
+Help users understand ingredients and discover related products.
 
 ---
 
-## Categories
+### Brand
 
-**Purpose**
+Purpose:
 
-Browse products by category.
+Browse all products from a specific brand.
+
+---
+
+# Discover
+
+### Discover Home
+
+Purpose:
+
+Introduce users to products outside their personal Library.
+
+Possible sections include:
+
+- Featured Products
+- Trending Products
+- New Products
+- Browse by Category
+
+---
+
+# Search
+
+### Search
+
+Purpose:
+
+Search for products within BloomVault.
+
+Includes:
+
+- Search bar
+- Search results
+- Recent searches
+- Suggested searches
+
+---
+
+# Me
+
+### Me
+
+Purpose:
+
+Provide access to personal account information, preferences, and settings.
+
+Possible sections include:
+
+- Account
+- Preferences
+- Settings
+- Help & Support
+- About BloomVault
+
+---
+
+# Supporting Screens
+
+### Empty States
+
+Purpose:
+
+Guide users when no content is available.
 
 Examples:
 
-* Cleansers
-* Sunscreens
-* Moisturizers
-* Serums
+- Empty Library
+- Empty Wishlist
+- Empty Collections
+- Empty Routines
 
 ---
 
-# ⚖️ Compare
+### Error States
+
+Purpose:
+
+Clearly communicate unexpected issues while helping users recover.
 
 ---
 
-## Compare Workspace
+### Loading States
 
-**Purpose**
+Purpose:
 
-Compare multiple beauty products side by side.
-
-Displays:
-
-* Ingredients
-* Benefits
-* Skin Compatibility
-* Notes
-* Key Differences
-
----
-
-# 👤 Profile
-
----
-
-## Profile Home
-
-**Purpose**
-
-Display personal information and BloomVault preferences.
-
----
-
-## Skin Profile
-
-**Purpose**
-
-Store personalized skin information that enhances recommendations and product organization.
-
----
-
-## Settings
-
-**Purpose**
-
-Manage application preferences.
-
----
-
-## Notifications
-
-**Purpose**
-
-Control reminder and notification preferences.
-
----
-
-## Account
-
-**Purpose**
-
-Manage authentication and account settings.
-
----
-
-# Utility Screens
-
----
-
-## Empty Library
-
-Shown when no products have been saved.
-
-Should encourage exploration.
-
----
-
-## No Search Results
-
-Suggest similar products or alternative searches.
-
----
-
-## Loading
-
-Display graceful loading states while maintaining visual consistency.
-
----
-
-## Offline
-
-Explain connectivity issues while preserving access to available offline content.
-
----
-
-## Error
-
-Present friendly, actionable error messages with clear recovery options.
+Provide visual feedback while data is loading.
 
 ---
 
 # Future Screens
 
-Potential additions include:
+The following screens are intentionally excluded from Version 1 but may be introduced in future releases:
 
-* AI Beauty Assistant
-* Barcode Scanner
-* Product Usage Tracker
-* Price Tracker
-* Shared Collections
-* Community Reviews
-* Achievements
-* Widgets
+- AI Beauty Assistant
+- Barcode Scanner
+- Price Tracking
+- Product Timeline
+- Smart Recommendations
+- Notifications
+- Beauty Journal
 
-These screens are intentionally excluded from the MVP but remain part of BloomVault's long-term vision.
-
----
-
-# Screen Design Principles
-
-Every screen should answer three questions immediately:
-
-1. Where am I?
-2. What can I do here?
-3. What should I do next?
-
-If users hesitate to answer any of these questions, the screen should be redesigned.
+These ideas are documented separately within Future UX Ideas.
 
 ---
 
-# Closing
+# Screen Relationships
 
-Each screen in BloomVault exists to support a meaningful part of the user's beauty journey.
+Most screens connect through Product Details.
 
-Together, these screens create an experience that feels less like navigating an application and more like exploring a thoughtfully curated personal beauty library.
+```text
+Library
+      │
+Discover
+      │
+Search
+      │
+      ▼
+Product Details
+      │
+ ┌────┼─────────────┐
+ │    │             │
+ ▼    ▼             ▼
+Ingredient      Brand      Compare
+      │
+      ▼
+Library Actions
+      │
+ ┌────┼─────────────┐
+ │    │             │
+ ▼    ▼             ▼
+Collections Wishlist Routines
+```
 
-As BloomVault evolves, this inventory should grow alongside the product while remaining true to its core philosophy: simplicity, curiosity, and personal organization.
+This architecture allows users to move naturally between learning and organization without unnecessary navigation.
+
+---
+
+# Screen Inventory Summary
+
+BloomVault Version 1 intentionally includes a focused set of screens that support research, organization, learning, and confident decision-making.
+
+Every screen has a clearly defined purpose and contributes to the overall experience of building a personal beauty library.
 
 ---
 
