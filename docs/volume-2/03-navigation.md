@@ -149,9 +149,9 @@ Library
         │
 Discover ├── Product Details
         │           │
- Search  │           ├── Ingredient Explorer
+Search  │           ├── Ingredient Explorer
         │           ├── Brand
- Profile │           ├── Compare
+Me  │           ├── Compare
                     ├── Collections
                     ├── Wishlist
                     └── Routines
