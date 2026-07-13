@@ -1,26 +1,26 @@
-Collections
+# Collections
 
-Feature ID: BV-007
-Volume: III — Product Specifications
-File: 07-collections.md
-Status: Draft
-Version: 0.1.0
-Last Updated: July 13, 2026
-Owner: Coleen Ligasan
+**Feature ID:** BV-007
+**Volume:** III — Product Specifications
+**File:** 07-collections.md
+**Status:** Draft
+**Version:** 0.1.0
+**Last Updated:** July 13, 2026
+**Owner:** Coleen Ligasan
 
-⸻
+---
 
-🌸 Overview
+# 🌸 Overview
 
 Collections allow users to organize their Beauty Library in a way that reflects how they naturally think and research.
 
 Rather than acting as rigid folders, Collections are flexible, personal groupings that help users organize products around goals, routines, skin concerns, occasions, or any system that makes sense to them.
 
-Collections are completely optional but become increasingly valuable as a user’s Beauty Library grows.
+Collections are completely optional but become increasingly valuable as a user's Beauty Library grows.
 
-⸻
+---
 
-Purpose
+# Purpose
 
 Provide users with a flexible way to organize their Beauty Library beyond categories or product types.
 
@@ -33,9 +33,9 @@ Collections should help users:
 
 Every collection should feel personal and meaningful.
 
-⸻
+---
 
-Problem It Solves
+# Problem It Solves
 
 As users save more products, their Beauty Library naturally grows.
 
@@ -48,48 +48,48 @@ Without organization, it becomes harder to:
 
 Collections solve this by allowing users to create their own organizational system.
 
-⸻
+---
 
-Goals
+# Goals
 
 Collections should:
 
 * Feel flexible rather than restrictive.
 * Support different ways of thinking.
 * Encourage organization without requiring it.
-* Grow naturally with the user’s Beauty Library.
+* Grow naturally with the user's Beauty Library.
 
-There should be no “right” way to create a collection.
+There should be no "right" way to create a collection.
 
-⸻
+---
 
-User Stories
+# User Stories
 
-Organize by Goal
+### Organize by Goal
 
-As a user, I want to group products by my beauty goals so I can easily revisit them later.
+**As a user, I want to group products by my beauty goals so I can easily revisit them later.**
 
-⸻
+---
 
-Organize Research
+### Organize Research
 
-As a user, I want to collect products I’m researching so I can compare them before making a purchase.
+**As a user, I want to collect products I'm researching so I can compare them before making a purchase.**
 
-⸻
+---
 
-Personal Organization
+### Personal Organization
 
-As a user, I want complete freedom to organize my library in a way that makes sense to me.
+**As a user, I want complete freedom to organize my library in a way that makes sense to me.**
 
-⸻
+---
 
-Seasonal Collections
+### Seasonal Collections
 
-As a user, I want to create temporary collections for events, trips, or seasonal routines.
+**As a user, I want to create temporary collections for events, trips, or seasonal routines.**
 
-⸻
+---
 
-Functional Requirements
+# Functional Requirements
 
 The Collections feature shall allow users to:
 
@@ -104,9 +104,9 @@ The Collections feature shall allow users to:
 
 Deleting a collection should never delete the products themselves.
 
-⸻
+---
 
-Business Rules
+# Business Rules
 
 * Every collection belongs to a single user.
 * Products may belong to multiple collections.
@@ -114,9 +114,9 @@ Business Rules
 * Deleting a collection removes only the collection, not its products.
 * Collection names should be editable.
 
-⸻
+---
 
-User Flow
+# User Flow
 
 Library
 
@@ -140,9 +140,9 @@ Open Product Details
 
 Return to Collection
 
-⸻
+---
 
-Screen Relationships
+# Screen Relationships
 
 Collections connect with:
 
@@ -153,11 +153,11 @@ Collections connect with:
 * Wishlist
 * Favorites
 
-Collections are an extension of the user’s Beauty Library.
+Collections are an extension of the user's Beauty Library.
 
-⸻
+---
 
-UI Components
+# UI Components
 
 Collections may include:
 
@@ -173,9 +173,9 @@ Collections may include:
 
 The experience should feel lightweight and easy to manage.
 
-⸻
+---
 
-User Interface Behavior
+# User Interface Behavior
 
 Collections should:
 
@@ -185,9 +185,9 @@ Collections should:
 * Preserve collection order.
 * Make creating new collections quick and effortless.
 
-⸻
+---
 
-States
+# States
 
 Supported states include:
 
@@ -201,19 +201,19 @@ Supported states include:
 
 Transitions should feel seamless and predictable.
 
-⸻
+---
 
-Empty States
+# Empty States
 
 When no collections exist, BloomVault should encourage users to create their first collection.
 
 Example:
 
-“Collections help organize your Beauty Library. Create one whenever you’re ready—there’s no right or wrong way to organize your beauty journey.”
+*"Collections help organize your Beauty Library. Create one whenever you're ready—there's no right or wrong way to organize your beauty journey."*
 
-⸻
+---
 
-Error Handling
+# Error Handling
 
 Examples include:
 
@@ -225,9 +225,9 @@ Examples include:
 
 Users should always understand what happened and how to recover.
 
-⸻
+---
 
-Edge Cases
+# Edge Cases
 
 Collections should gracefully support:
 
@@ -239,9 +239,9 @@ Collections should gracefully support:
 
 Performance should remain consistent regardless of library size.
 
-⸻
+---
 
-Accessibility
+# Accessibility
 
 Collections should support:
 
@@ -251,9 +251,9 @@ Collections should support:
 * Logical navigation order.
 * Clear labels and actions.
 
-⸻
+---
 
-Analytics Events
+# Analytics Events
 
 Potential analytics events include:
 
@@ -266,17 +266,17 @@ Potential analytics events include:
 
 These insights help improve organization features while respecting user privacy.
 
-⸻
+---
 
-Database Impact
+# Database Impact
 
 Collections store user-owned organizational data and maintain relationships between users and saved products.
 
 Detailed schema definitions are documented within the Technical Architecture volume.
 
-⸻
+---
 
-API Requirements
+# API Requirements
 
 Collections require functionality for:
 
@@ -289,17 +289,17 @@ Collections require functionality for:
 
 Implementation details are defined separately.
 
-⸻
+---
 
-Security & Permissions
+# Security & Permissions
 
 Users may only access and manage their own collections.
 
 All collection data should be protected through authentication and Row Level Security (RLS).
 
-⸻
+---
 
-Performance Considerations
+# Performance Considerations
 
 Collections should:
 
@@ -309,9 +309,9 @@ Collections should:
 * Synchronize changes across devices.
 * Scale with growing libraries.
 
-⸻
+---
 
-Acceptance Criteria
+# Acceptance Criteria
 
 The feature is complete when users can:
 
@@ -322,9 +322,9 @@ The feature is complete when users can:
 * Browse collection contents.
 * Search and sort collections.
 
-⸻
+---
 
-Future Enhancements
+# Future Enhancements
 
 Potential future improvements include:
 
@@ -336,20 +336,20 @@ Potential future improvements include:
 * Collections containing ingredients, notes, comparisons, articles, and routines.
 * Collection templates.
 
-⸻
+---
 
-Product Decisions
+# Product Decisions
 
 Collections are intentionally designed as flexible personal spaces rather than rigid folders.
 
 Users should feel free to organize their Beauty Library in whatever way feels natural to them.
 
-The feature exists to support the user’s way of thinking—not to impose a predefined organizational system.
+The feature exists to support the user's way of thinking—not to impose a predefined organizational system.
 
-As BloomVault evolves, Collections may expand beyond products to become complete beauty research spaces, further reinforcing BloomVault’s identity as a personal beauty knowledge library.
+As BloomVault evolves, Collections may expand beyond products to become complete beauty research spaces, further reinforcing BloomVault's identity as a personal beauty knowledge library.
 
-⸻
+---
 
-BloomVault
+> **BloomVault**
 
-Your Personal Beauty Library.
+> *Your Personal Beauty Library.*
