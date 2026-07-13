@@ -2,7 +2,7 @@
 
 **Feature ID:** BV-002
 **Volume:** III — Product Specifications
-**File:** 02-user-profile.md
+**File:** 02-me.md
 **Status:** Draft
 **Version:** 0.1.0
 **Last Updated:** July 13, 2026
@@ -12,9 +12,9 @@
 
 # 🌸 Overview
 
-The User Profile stores personal preferences and account information that allow BloomVault to deliver a more personalized and relevant experience.
+The Me stores personal preferences and account information that allow BloomVault to deliver a more personalized and relevant experience.
 
-Unlike social media profiles, the User Profile is private and exists solely to support the user's beauty journey.
+Unlike social media profiles, the Me is private and exists solely to support the user's beauty journey.
 
 It helps BloomVault understand the user's preferences while giving users complete control over the information they choose to share.
 
