@@ -1,233 +1,237 @@
-# Introduction
+# 🌸 Product Specifications
 
-**Volume:** III — Product Specifications
-**File:** 00-introduction.md
-**Status:** Draft
-**Version:** 0.1.0
-**Last Updated:** July 13, 2026
-**Owner:** Coleen Ligasan
+> *"Great products are built one thoughtful feature at a time."*
 
 ---
 
-# 🌸 Overview
+# Introduction
 
-Volume III defines the functional specifications of BloomVault.
+This volume defines the functional specifications for every feature included in **BloomVault Version 1**.
 
-While previous volumes established the product's vision, philosophy, and user experience, this volume describes **exactly what will be built**.
+While Volume I established the product vision and philosophy, and Volume II defined the user experience, this volume translates those ideas into concrete product features.
 
-Each document focuses on a single feature and provides enough detail for designers, developers, testers, and AI coding assistants to implement the feature consistently.
+Each document describes what the feature does, why it exists, how users interact with it, and how it contributes to BloomVault's mission of becoming **Your Personal Beauty Library**.
 
-This volume serves as the primary source of truth for BloomVault's product behavior.
+These specifications serve as the functional blueprint for design, development, testing, and future enhancements.
 
 ---
 
 # Purpose
 
-The purpose of this volume is to remove ambiguity during product development.
+The Product Specifications aim to:
 
-Rather than relying on assumptions or memory, every significant feature is documented with clear expectations, business rules, user behavior, and acceptance criteria.
+- Clearly define every core feature.
+- Ensure consistency across the application.
+- Provide developers with implementation guidance.
+- Support future scalability.
+- Keep every feature aligned with BloomVault's product philosophy.
 
-Each specification should answer questions such as:
+Every specification should answer one simple question:
 
-* What problem does this feature solve?
-* Who is it designed for?
-* How should it behave?
-* How should users interact with it?
-* What happens in exceptional situations?
-* What defines a successful implementation?
-
-By answering these questions before development begins, BloomVault reduces unnecessary rework and ensures a consistent product experience.
+> **How does this feature help users research, organize, understand, or confidently navigate beauty products?**
 
 ---
 
-# Relationship to Other Volumes
+# Product Philosophy
 
-Each volume within the BloomVault Product Bible has a distinct responsibility.
+Every feature in BloomVault should support one or more of these principles:
 
-### Volume I — Foundation
+- Research before purchase.
+- Products are the center of every experience.
+- Education over recommendation.
+- Organization over clutter.
+- Simplicity over feature quantity.
+- Calm, intentional user experiences.
+- Confidence through understanding.
 
-Defines why BloomVault exists.
-
-Includes:
-
-* Vision
-* Mission
-* Product Philosophy
-* Target Users
-* Success Metrics
+These principles ensure that every feature contributes to a cohesive product rather than becoming an isolated capability.
 
 ---
 
-### Volume II — Experience Design
+# Product Architecture
 
-Defines how BloomVault should feel.
+BloomVault follows a **product-centered architecture**.
 
-Includes:
+Products are the foundation that connects every major experience within the application.
 
-* UX Principles
-* Navigation
-* Information Architecture
-* User Flows
-* Design System
-* Accessibility
+From a Product Details page, users can naturally continue exploring:
 
----
+- Ingredients
+- Brands
+- Product Comparisons
+- Collections
+- Wishlist
+- Routines
+- Personal Notes
 
-### Volume III — Product Specifications
-
-Defines what BloomVault does.
-
-Each feature is documented independently using a consistent specification template.
+This connected approach allows users to move effortlessly between learning and organization without feeling lost.
 
 ---
 
-### Future Volumes
+# Feature Organization
 
-Future documentation will expand into technical implementation and delivery planning, including:
+The Product Specifications are organized according to BloomVault's major functional areas.
 
-* Technical Architecture
-* UI Specifications
-* Product Planning
-* Development Guidelines
-* AI Development Guide
+## Authentication
+
+- Authentication
 
 ---
 
-# Intended Audience
+## User
 
-This documentation is written for everyone involved in building BloomVault.
-
-Including:
-
-* Product Managers
-* Designers
-* Software Engineers
-* QA Engineers
-* AI Coding Assistants
-* Future Contributors
-* Future Versions of the Founder
-
-Every reader should be able to understand the feature without needing additional context.
+- Me
 
 ---
 
-# Writing Principles
+## Personal Library
 
-Every specification within this volume should be:
-
-## Clear
-
-Requirements should be specific and unambiguous.
-
-Avoid language that leaves room for interpretation.
+- Library
+- Collections
+- Wishlist
+- Routines
 
 ---
 
-## User-Centered
+## Product Research
 
-Every feature should begin with the user's problem rather than the technical solution.
-
-BloomVault exists to improve the beauty research experience—not simply to deliver functionality.
-
----
-
-## Consistent
-
-Feature documents should follow a standardized structure.
-
-This makes documentation easier to navigate and easier for AI systems to interpret.
+- Product Details
+- Product Search
+- Discover
+- Ingredient Explorer
+- Brands
+- Product Comparison
 
 ---
 
-## Implementation-Agnostic
+## Supporting Features
 
-Specifications should describe expected behavior rather than specific code implementations whenever possible.
-
-Technical decisions belong in the Technical Architecture volume.
-
----
-
-## Future-Friendly
-
-Every document should support future expansion without requiring complete rewrites.
-
-Specifications should remain valuable as BloomVault evolves.
+- Personal Notes *(planned for Version 1)*
+- Empty States
+- Error States
+- Loading States
 
 ---
 
-# Standard Feature Specification Template
+# Current Feature List
 
-Unless otherwise required, every feature document should follow the structure below.
+The current feature specifications include:
 
-1. Overview
-2. Purpose
-3. Problem It Solves
-4. Goals
-5. User Stories
-6. Functional Requirements
-7. Business Rules
-8. User Flow
-9. Screen Relationships
-10. UI Components
-11. User Interface Behavior
-12. States
-13. Empty States
-14. Error Handling
-15. Edge Cases
-16. Accessibility
-17. Analytics Events
-18. Database Impact
-19. API Requirements
-20. Security & Permissions
-21. Performance Considerations
-22. Acceptance Criteria
-23. Future Enhancements
-24. Product Decisions
-
-Not every feature will require every section.
-
-However, consistency should always be preferred.
+| No. | Document |
+|-----|----------|
+| 00 | Introduction |
+| 01 | Authentication |
+| 02 | Me |
+| 03 | Library |
+| 04 | Product Details |
+| 05 | Product Search |
+| 06 | Discover |
+| 07 | Collections |
+| 08 | Wishlist |
+| 09 | Product Comparison |
+| 10 | Routines |
+| 11 | Ingredient Explorer |
+| 12 | Brands |
+| 13 | Personal Notes *(planned)* |
 
 ---
 
-# AI-Assisted Development
+# Scope
 
-BloomVault is intentionally designed for AI-assisted software development.
+Version 1 focuses on creating a complete beauty research and organization experience.
 
-These specifications are written to provide sufficient context for AI coding assistants while remaining understandable for human collaborators.
+Included:
 
-Every specification should minimize assumptions by clearly defining:
+- Personal beauty library
+- Product discovery
+- Product research
+- Ingredient education
+- Brand exploration
+- Product comparison
+- Collections
+- Wishlist
+- Routines
+- Personal notes
 
-* Expected behavior
-* User interactions
-* Business rules
-* Success criteria
-* Edge cases
-* Future considerations
+Excluded from Version 1:
 
-The objective is to create documentation that AI can confidently transform into production-ready software with minimal clarification.
+- AI Beauty Assistant
+- Barcode Scanner
+- Price Tracking
+- Notifications
+- Beauty Journal
+- Social features
+- Gamification
+
+These ideas are intentionally deferred to future versions.
+
+---
+
+# Relationship Between Features
+
+The Product Details page acts as the central hub of BloomVault.
+
+```text
+Library
+      │
+Discover
+      │
+Search
+      │
+      ▼
+Product Details
+      │
+ ┌────┼─────────────┐
+ │    │             │
+ ▼    ▼             ▼
+Ingredient      Brand      Compare
+      │
+      ▼
+Library Actions
+      │
+ ┌────┼─────────────┐
+ │    │             │
+ ▼    ▼             ▼
+Collections Wishlist Routines
+      │
+      ▼
+Personal Notes
+```
+
+Every feature supports the user's journey toward understanding, organizing, and confidently managing beauty products.
 
 ---
 
-# Document Status
+# Future Growth
 
-Specifications should evolve alongside the product.
+BloomVault has been intentionally designed with scalability in mind.
 
-Each document should include version information and be updated whenever product decisions change.
+Future releases may introduce additional features without changing the application's core philosophy.
 
-Changes should prioritize clarity over completeness, ensuring that documentation always reflects the intended product behavior.
+Potential future capabilities include:
+
+- AI-powered assistance
+- Barcode scanning
+- Personalized insights
+- Price tracking
+- Product timelines
+- Smart recommendations
+
+Every future feature should strengthen—not redefine—the existing experience.
 
 ---
 
-# Closing
+# Volume Summary
 
-Volume III transforms BloomVault from a product vision into an implementation blueprint.
+The Product Specifications transform BloomVault's vision into practical, implementable features.
 
-Every specification represents a shared understanding of how BloomVault should behave, ensuring that every feature reflects the product's philosophy of thoughtful organization, calm exploration, and meaningful beauty research.
+Together, these documents define a focused and connected product where every feature contributes to a single purpose:
 
-As BloomVault grows, this volume should remain the definitive reference for how the product works—not just today, but throughout its evolution.
+Helping users research, organize, understand, and confidently navigate beauty products.
 
 ---
+
+> **Research with curiosity. Organize with intention. Learn with confidence.**
 
 > **BloomVault**
 
