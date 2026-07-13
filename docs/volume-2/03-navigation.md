@@ -1,282 +1,239 @@
 # 🌸 Navigation
 
-> *"The best navigation disappears. Users simply know where to go."*
-
----
-
-# Experience Goal
-
-Create a navigation system that feels effortless, predictable, and intuitive.
-
-Users should spend their time exploring beauty—not figuring out how to use the app.
-
-Navigation should quietly support the experience without competing for attention.
+> *"Navigation should feel invisible. Users should focus on exploring beauty—not figuring out where to tap next."*
 
 ---
 
 # Introduction
 
-Navigation is the connective tissue of BloomVault.
+BloomVault is designed to make beauty research feel natural and effortless.
 
-It guides users through their personal beauty library, helping them discover products, continue research, compare options, and manage their collections with confidence.
+Navigation should never interrupt the user's curiosity. Instead, every interaction should gently guide users toward related information while keeping the experience simple and predictable.
 
-BloomVault favors simplicity over complexity.
-
-Every destination should have a clear purpose, and every journey should feel natural.
+Rather than filling the application with dozens of destinations, BloomVault focuses on a small number of primary entry points connected through products.
 
 ---
 
-# Navigation Philosophy
+# Navigation Principles
 
-BloomVault follows four guiding principles:
+BloomVault follows these navigation principles:
 
-* Simple over clever.
-* Consistent over surprising.
-* Calm over crowded.
-* Familiar over experimental.
+- Keep navigation simple.
+- Minimize unnecessary taps.
+- Prioritize product exploration.
+- Maintain consistency across screens.
+- Keep users oriented at all times.
+- Encourage discovery without overwhelming users.
 
-Users should rarely question where something is located.
-
-If they do, the navigation should be improved—not the user.
+Navigation should always feel calm and intentional.
 
 ---
 
 # Primary Navigation
 
-BloomVault uses a persistent bottom navigation bar with four primary destinations.
+Version 1 of BloomVault contains four primary destinations.
 
 ```text
 📚 Library
 
 🔍 Discover
 
-⚖️ Compare
+🔎 Search
 
 👤 Profile
 ```
 
-These destinations remain accessible from anywhere in the app.
+These four destinations provide access to every major feature within the application.
 
 ---
 
-# 📚 Library
+# Library
 
-**Purpose**
+The Library is the user's personal beauty space.
 
-The user's personal beauty space.
+Users can:
 
-The Library is the default destination after signing in.
+- Browse saved products
+- Open collections
+- View Wishlist
+- Manage routines
+- Open Product Details
 
-Everything the user saves eventually belongs here.
-
-### Contains
-
-* All Products
-* Collections
-* Wishlist
-* Favorites
-* Routines
-* Beauty Journal
-* Recently Added
-
-### Primary Question
-
-> *"What have I already discovered?"*
+Library represents everything the user has intentionally saved.
 
 ---
 
-# 🔍 Discover
+# Discover
 
-**Purpose**
+Discover introduces users to products outside their personal Library.
 
-Explore new products, brands, ingredients, and categories.
+Users can:
 
-This is where curiosity begins.
+- Browse featured products
+- Explore trending products
+- Discover new releases
+- Browse categories
+- Open Product Details
 
-### Contains
-
-* Search
-* Ingredient Explorer
-* Brands
-* Categories
-* Product Discovery
-
-### Primary Question
-
-> *"What should I explore next?"*
+Discover encourages curiosity and exploration.
 
 ---
 
-# ⚖️ Compare
+# Search
 
-**Purpose**
+Search provides fast access to BloomVault's product catalog.
 
-Help users make informed beauty decisions.
+Users can:
 
-Users can evaluate products side by side without leaving the comparison workspace.
+- Search products
+- View recent searches
+- Open Product Details
 
-### Primary Question
-
-> *"Which product fits me best?"*
-
----
-
-# 👤 Profile
-
-**Purpose**
-
-Personalize the BloomVault experience.
-
-### Contains
-
-* Skin Profile
-* Beauty Preferences
-* Settings
-* Notifications
-* Account
-
-### Primary Question
-
-> *"How can BloomVault work better for me?"*
+Search is optimized for direct product discovery rather than browsing.
 
 ---
 
-# Secondary Navigation
+# Profile
 
-Within each primary destination, users navigate through contextual sections rather than additional global tabs.
+Profile contains personal preferences and account management.
 
-For example:
+Users can:
+
+- Manage account information
+- Configure preferences
+- Access settings
+- View support resources
+
+Profile contains no product-related content.
+
+---
+
+# Product Details
+
+Product Details acts as the central navigation hub within BloomVault.
+
+From a single product, users can navigate to:
+
+- Ingredient Explorer
+- Brand
+- Compare
+- Collections
+- Wishlist
+- Routines
+- Personal Notes
+
+Every connected experience begins with the product.
+
+---
+
+# Contextual Navigation
+
+Some experiences are intentionally accessed through products rather than appearing in the main navigation.
+
+These include:
+
+- Ingredient Explorer
+- Brand
+- Product Comparison
+
+This approach reduces interface complexity while making related information easier to discover at the moment it becomes relevant.
+
+---
+
+# Navigation Flow
+
+The primary navigation follows this structure.
 
 ```text
 Library
-
-↓
-
-Collections
-
-↓
-
-Collection Details
-
-↓
-
-Saved Product
-
-↓
-
-Product Notes
+        │
+Discover ├── Product Details
+        │           │
+ Search  │           ├── Ingredient Explorer
+        │           ├── Brand
+ Profile │           ├── Compare
+                    ├── Collections
+                    ├── Wishlist
+                    └── Routines
 ```
 
-This hierarchy keeps the interface focused and prevents unnecessary complexity.
-
----
-
-# Global Search
-
-Search is a core experience rather than a standalone screen.
-
-Users should be able to search from anywhere within BloomVault.
-
-Search supports:
-
-* Products
-* Ingredients
-* Brands
-* Categories
-* Saved Products
-* Collections
-
-The goal is immediate access to information with minimal effort.
+Products naturally connect users to deeper knowledge without requiring them to return to the main navigation.
 
 ---
 
 # Navigation Behavior
 
-BloomVault follows predictable navigation patterns.
+Navigation should:
 
-* Bottom navigation always remains visible at the top level.
-* Child screens use a standard back button.
-* Deep navigation should never exceed three levels whenever possible.
-* Important actions should remain within easy reach of the user's thumb.
+- Preserve scroll position where appropriate.
+- Remember search history.
+- Maintain selected filters.
+- Support deep linking between related content.
+- Provide intuitive back navigation.
 
-Navigation should always feel lightweight and responsive.
-
----
-
-# Deep Navigation Example
-
-```text
-Library
-
-↓
-
-Collections
-
-↓
-
-Glass Skin Routine
-
-↓
-
-Skin1004 Probio-Cica Ampoule
-
-↓
-
-Ingredient Details
-```
-
-Users should always know where they are and how to return.
+Users should always understand where they are and how to return.
 
 ---
 
-# Navigation Consistency
+# Navigation Hierarchy
 
-Every screen should provide:
+BloomVault uses a shallow hierarchy.
 
-* A clear page title.
-* A predictable back action.
-* Consistent iconography.
-* Familiar interaction patterns.
+Most information should be reachable within three taps or fewer.
 
-Consistency builds confidence and reduces cognitive load.
+Deep navigation trees should be avoided whenever possible.
 
 ---
 
-# What Navigation Should Never Feel Like
+# Empty Navigation States
 
-Navigation should never feel:
+When a destination contains no content, BloomVault should guide users toward meaningful actions.
 
-* Confusing
-* Overwhelming
-* Hidden
-* Inconsistent
-* Crowded
+Examples include:
 
-Users should never have to memorize where features are located.
+- Empty Library → Discover products.
+- Empty Wishlist → Save products to revisit later.
+- Empty Collections → Create your first collection.
+- Empty Routines → Build your first routine.
 
-The structure should feel obvious.
+Navigation should always provide a clear next step.
+
+---
+
+# Accessibility
+
+Navigation should support:
+
+- Screen readers
+- Dynamic text sizes
+- Large touch targets
+- Keyboard navigation (where applicable)
+- Logical reading order
+
+Accessibility should be considered a core part of the navigation experience.
 
 ---
 
 # Future Navigation
 
-As BloomVault grows, new features should integrate into existing destinations whenever possible.
+As BloomVault evolves, future features should integrate into the existing navigation structure rather than increasing complexity.
 
-Avoid creating additional top-level navigation unless it introduces a fundamentally new experience.
+Potential future additions include:
 
-Growth should deepen the library—not complicate it.
+- AI Beauty Assistant
+- Barcode Scanner
+- Product Timeline
+- Price Tracking
+
+These features should remain contextual whenever possible.
 
 ---
 
-# Closing
+# Navigation Summary
 
-Great navigation is rarely noticed.
+BloomVault keeps navigation intentionally simple by limiting primary destinations and allowing products to act as the central gateway to deeper exploration.
 
-Instead, users notice how easy the product feels to use.
-
-BloomVault's navigation should quietly guide users through their beauty journey, allowing curiosity—not complexity—to define the experience.
-
-Every tap should bring users closer to knowledge, organization, and confidence.
+Rather than navigating between isolated features, users naturally move through connected information that supports research, learning, organization, and confident decision-making.
 
 ---
 
