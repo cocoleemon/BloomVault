@@ -49,7 +49,7 @@ Home
 ├── Library
 ├── Discover
 ├── Search
-└── Profile
+└── Me
 ```
 
 ---
@@ -64,7 +64,7 @@ Home
 ├── 📚 Library
 ├── 🔍 Discover
 ├── 🔎 Search
-└── 👤 Profile
+└── 👤 Me
 ```
 
 These destinations provide access to every core feature within the application.
