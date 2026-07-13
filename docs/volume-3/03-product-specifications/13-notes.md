@@ -2,6 +2,14 @@
 
 > *"The most valuable beauty advice is often the advice you give your future self."*
 
+Feature ID: BV-013
+Volume: III — Product Specifications
+File: 13-notes.md
+Status: Draft
+Version: 0.1.0
+Last Updated: July 13, 2026
+Owner: Coleen Ligasan
+
 ---
 
 # 🌸 Overview
