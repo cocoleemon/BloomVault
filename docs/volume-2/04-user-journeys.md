@@ -1,300 +1,408 @@
 # 🌸 User Journeys
 
-> *"Every product tells a story. Great experiences help users write their own."*
-
----
-
-# Experience Goal
-
-Design meaningful journeys that feel natural, intentional, and rewarding.
-
-Every journey should help users move from curiosity to confidence while strengthening their personal beauty library.
+> *"Users don't come to BloomVault to navigate screens. They come to answer questions, organize discoveries, and build confidence in their beauty decisions."*
 
 ---
 
 # Introduction
 
-User journeys describe the complete experience users have while interacting with BloomVault.
+User journeys describe the real-life goals users want to accomplish while using BloomVault.
 
-Unlike user flows, which focus on individual tasks, user journeys capture the motivations, emotions, and goals behind those tasks.
+Rather than focusing on individual screens, each journey follows the user's intention from beginning to end.
 
-Each journey represents a meaningful moment in a user's beauty research process.
-
-Together, these journeys define the BloomVault experience.
+BloomVault should make every journey feel simple, connected, and rewarding.
 
 ---
 
-# Journey 1 — Discover a Product
+# Journey Principles
+
+Every journey should:
+
+- Begin with a clear user intention.
+- Require as few steps as possible.
+- Feel natural and predictable.
+- Encourage exploration without creating confusion.
+- Always provide a meaningful next step.
+
+---
+
+# Journey 1 — Discover a New Product
 
 ### Goal
 
-Capture a beauty discovery before it is forgotten.
-
-### Scenario
-
-A user comes across a skincare product on TikTok, Instagram, YouTube, or through a friend's recommendation.
-
-Instead of taking a screenshot or saving another browser tab, they immediately open BloomVault.
+Research a product that the user has never seen before.
 
 ### Journey
 
 ```text
-Discover Product
-        ↓
 Open BloomVault
-        ↓
-Search Product
-        ↓
-Read Product Overview
-        ↓
-Save to Library
-        ↓
-Add Personal Note (Optional)
-        ↓
-Continue Exploring
-```
 
-### Success
+↓
 
-The product is safely stored in the user's personal library with its original context preserved.
+Discover
 
----
+↓
 
-# Journey 2 — Research Before Buying
+Browse Products
 
-### Goal
+↓
 
-Make an informed purchasing decision.
+Open Product Details
 
-### Scenario
+↓
 
-The user wants to learn more before spending money on a product.
+Read Product Information
 
-They explore ingredients, benefits, reviews, and comparisons.
+↓
 
-### Journey
-
-```text
-Open Saved Product
-        ↓
-Read Product Details
-        ↓
 Explore Ingredients
-        ↓
-Compare Alternatives
-        ↓
-Review Personal Notes
-        ↓
-Decide Whether to Purchase
+
+↓
+
+Browse Brand
+
+↓
+
+Compare with Another Product (Optional)
+
+↓
+
+Save to Library or Wishlist
 ```
 
-### Success
+### Success Outcome
 
-The user feels informed and confident in their decision.
+The user understands the product and decides whether to save it for future reference.
 
 ---
 
-# Journey 3 — Organize the Beauty Library
+# Journey 2 — Search for a Specific Product
 
 ### Goal
 
-Transform saved products into an organized knowledge library.
-
-### Scenario
-
-Over time, the user's library grows.
-
-They organize products into collections that reflect their interests, routines, or goals.
+Quickly find a product already in mind.
 
 ### Journey
 
 ```text
-Open Library
-        ↓
-Create Collection
-        ↓
-Add Products
-        ↓
-Rename Collection
-        ↓
-Continue Organizing
+Open BloomVault
+
+↓
+
+Search
+
+↓
+
+Enter Product Name
+
+↓
+
+View Search Results
+
+↓
+
+Open Product Details
+
+↓
+
+Research Product
+
+↓
+
+Save to Library or Wishlist
 ```
 
-### Success
+### Success Outcome
 
-The library becomes easier to navigate and more meaningful to the user.
+The user quickly finds the desired product and continues researching.
 
 ---
 
-# Journey 4 — Build a Routine
+# Journey 3 — Learn About an Ingredient
 
 ### Goal
 
-Turn research into daily habits.
-
-### Scenario
-
-The user creates a personalized skincare routine using products they own or plan to purchase.
+Understand an unfamiliar ingredient.
 
 ### Journey
 
 ```text
-Open Library
-        ↓
+Open Product Details
+
+↓
+
+Tap Ingredient
+
+↓
+
+Ingredient Explorer
+
+↓
+
+Read Explanation
+
+↓
+
+View Related Products
+
+↓
+
+Return to Product
+```
+
+### Success Outcome
+
+The user gains confidence without leaving BloomVault.
+
+---
+
+# Journey 4 — Explore a Brand
+
+### Goal
+
+See what else a brand offers.
+
+### Journey
+
+```text
+Open Product Details
+
+↓
+
+Tap Brand
+
+↓
+
+Browse Brand Catalog
+
+↓
+
+Filter by Category
+
+↓
+
+Open Another Product
+```
+
+### Success Outcome
+
+The user discovers additional products naturally.
+
+---
+
+# Journey 5 — Compare Products
+
+### Goal
+
+Choose between two or more products.
+
+### Journey
+
+```text
+Open Product Details
+
+↓
+
+Compare
+
+↓
+
+Select Product
+
+↓
+
+Review Differences
+
+↓
+
+Make a Decision
+
+↓
+
+Save Preferred Product
+```
+
+### Success Outcome
+
+The user feels confident in their decision.
+
+---
+
+# Journey 6 — Organize the Library
+
+### Goal
+
+Keep beauty research organized.
+
+### Journey
+
+```text
+Library
+
+↓
+
+Select Product
+
+↓
+
+Add to Collection
+
+↓
+
+Update Wishlist
+
+↓
+
+Assign to Routine
+
+↓
+
+Add Personal Notes
+```
+
+### Success Outcome
+
+The user's library becomes increasingly valuable over time.
+
+---
+
+# Journey 7 — Build a Routine
+
+### Goal
+
+Organize products into a skincare routine.
+
+### Journey
+
+```text
+Library
+
+↓
+
+Routines
+
+↓
+
 Create Routine
-        ↓
-Select Products
-        ↓
-Arrange Order
-        ↓
+
+↓
+
+Add Products
+
+↓
+
+Arrange Product Order
+
+↓
+
 Save Routine
 ```
 
-### Success
+### Success Outcome
 
-The user has a clear, personalized routine that supports their beauty goals.
+The user creates a personalized routine that reflects their skincare habits.
 
 ---
 
-# Journey 5 — Reflect on Product Experiences
+# Journey 8 — Revisit Saved Research
 
 ### Goal
 
-Remember personal experiences over time.
-
-### Scenario
-
-After using a product, the user records observations to help future purchasing decisions.
+Return to previously saved products.
 
 ### Journey
 
 ```text
-Open Saved Product
-        ↓
-Write Personal Notes
-        ↓
-Rate Experience
-        ↓
-Save Reflection
-```
+Library
 
-### Success
+↓
 
-The user's beauty library becomes increasingly personal and valuable.
+Browse Collection
 
----
+↓
 
-# Journey 6 — Compare Products
+Open Product
 
-### Goal
+↓
 
-Choose the product that best fits the user's needs.
+Review Notes
 
-### Scenario
+↓
 
-The user is deciding between two or more similar products.
-
-### Journey
-
-```text
-Select Products
-        ↓
-Open Compare
-        ↓
-Review Ingredients
-        ↓
-Review Benefits
-        ↓
-Compare Personal Notes
-        ↓
-Choose Product
-```
-
-### Success
-
-The user reaches a confident decision without leaving BloomVault.
-
----
-
-# Journey 7 — Rediscover Past Research
-
-### Goal
-
-Quickly find previously saved discoveries.
-
-### Scenario
-
-Months after saving a product, the user remembers only a small detail—perhaps the brand, an ingredient, or a skin concern.
-
-BloomVault helps them find it effortlessly.
-
-### Journey
-
-```text
-Open BloomVault
-        ↓
-Search Library
-        ↓
-Find Saved Product
-        ↓
-Review Previous Notes
-        ↓
 Continue Research
 ```
 
-### Success
+### Success Outcome
 
-Users trust BloomVault as their long-term beauty memory.
+Research is never lost and can always be revisited.
 
 ---
 
-# Emotional Journey
+# Connected Journeys
 
-Across every experience, BloomVault should guide users through the following emotional progression:
+BloomVault encourages continuous exploration.
+
+A typical journey may naturally evolve like this:
 
 ```text
-Curiosity
-      ↓
-Discovery
-      ↓
-Learning
-      ↓
-Organization
-      ↓
-Confidence
-      ↓
-Reflection
+Discover
+
+↓
+
+Product
+
+↓
+
+Ingredient
+
+↓
+
+Related Products
+
+↓
+
+Brand
+
+↓
+
+Another Product
+
+↓
+
+Compare
+
+↓
+
+Save to Library
+
+↓
+
+Add to Routine
 ```
 
-This emotional journey is more important than any individual feature.
+The user is never forced into a rigid path.
+
+Instead, every screen opens new opportunities to learn.
 
 ---
 
-# Shared Experience Principles
+# Journey Philosophy
 
-Every user journey should:
+BloomVault is designed around curiosity.
 
-* Begin with curiosity.
-* Minimize unnecessary effort.
-* Preserve personal context.
-* Encourage thoughtful exploration.
-* End with greater confidence.
+Users are free to explore, compare, organize, and revisit information in whatever order feels natural to them.
 
-These principles ensure every experience reflects BloomVault's philosophy.
+The application supports discovery rather than prescribing a fixed workflow.
+
+Every journey should leave users feeling more informed than when they started.
 
 ---
 
-# Closing
+# User Journey Summary
 
-BloomVault is not simply a place to store products.
+BloomVault transforms beauty research into a connected experience where every interaction builds knowledge.
 
-It is a companion throughout the user's beauty journey.
-
-Whether discovering a new serum, organizing a collection, comparing ingredients, or reflecting on a favorite moisturizer, every journey contributes to a library that becomes more personal over time.
-
-Great products help users complete tasks.
-
-BloomVault helps users build knowledge.
+Rather than moving through isolated screens, users move through ideas, products, ingredients, brands, and personal organization—all working together to support better beauty decisions.
 
 ---
 
