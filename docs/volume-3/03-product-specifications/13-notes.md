@@ -1,10 +1,10 @@
-# 🌸 Personal Notes
+# Personal Notes
 
 > *"The most valuable beauty advice is often the advice you give your future self."*
 
 ---
 
-# Overview
+#🌸 Overview
 
 **Feature ID:** BV-013
 
