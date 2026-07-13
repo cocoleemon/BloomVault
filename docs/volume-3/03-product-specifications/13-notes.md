@@ -1,7 +1,5 @@
 # Personal Notes
 
-> *"The most valuable beauty advice is often the advice you give your future self."*
-
 Feature ID: BV-013
 Volume: III — Product Specifications
 File: 13-notes.md
