@@ -1,4 +1,4 @@
-# User Profile
+# Me
 
 **Feature ID:** BV-002
 **Volume:** III — Product Specifications
@@ -51,7 +51,7 @@ The User Profile provides optional context that helps BloomVault become a smarte
 
 # Goals
 
-The User Profile should:
+The Me should:
 
 * Keep personal information organized.
 * Support meaningful personalization.
@@ -159,7 +159,7 @@ Library
 
 ↓
 
-Profile
+Me
 
 ↓
 
